@@ -1,19 +1,12 @@
-FROM node:14
+FROM php:7.4-fpm-alpine
 
-# Create app directory
-WORKDIR /usr/src/app
+WORKDIR /var/www/html
 
-# Install app dependencies
-# A wildcard is used to ensure both package.json AND package-lock.json are copied
-# where available (npm@5+)
-COPY package*.json ./
+ADD https://raw.githubusercontent.com/mlocati/docker-php-extension-installer/master/install-php-extensions /usr/local/bin/
 
-RUN npm install
-# If you are building your code for production
-# RUN npm ci --only=production
+RUN chmod ugo+x /usr/local/bin/install-php-extensions && sync && \
+    install-php-extensions pdo pdo_mysql gd zip exif
 
-# Bundle app source
-COPY . .
+RUN docker-php-ext-install mysqli pdo pdo_mysql exif
 
-EXPOSE 3000
-CMD [ "node", "server/server.js" ]
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composerdoc
