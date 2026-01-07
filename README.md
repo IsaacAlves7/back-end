@@ -100,6 +100,14 @@ INSERT TO blog.post VALUES(7,'Isaac','DevOps Engineer', '2021-11-01 23:54:02');
 SELECT * FROM blog.post;
 ```
 
+### Configurando o banco de dados com psql
+
+```sh
+create database IsaacAlves7; # Comando para criar o banco de dados chamado IsaacAlves7
+alter user postgres with encrypted password 'senha'; # Comando para alterar a senha do banco de dados do PostgreSQL
+\q # saindo do psql
+```
+
 ### SSM
 ```
 !Sub '{{resolve:ssm-secure:/ECSCluster/${ClusterName}/RDS_ROOT_PASSWORD:1}}'
