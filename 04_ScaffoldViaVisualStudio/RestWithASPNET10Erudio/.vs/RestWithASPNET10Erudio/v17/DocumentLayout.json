@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Code\\ASP.NET\\rest-with-asp-net-10-erudio\\04_RestWithASPNET10Erudio_ScaffoldViaVisualStudio\\RestWithASPNET10Erudio\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{93DA2FE4-9B59-4F0B-BDDB-F4720474A830}|RestWithASPNET10Erudio\\RestWithASPNET10Erudio.csproj|d:\\code\\asp.net\\rest-with-asp-net-10-erudio\\04_restwithaspnet10erudio_scaffoldviavisualstudio\\restwithaspnet10erudio\\restwithaspnet10erudio\\restwithaspnet10erudio.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{93DA2FE4-9B59-4F0B-BDDB-F4720474A830}|RestWithASPNET10Erudio\\RestWithASPNET10Erudio.csproj|solutionrelative:restwithaspnet10erudio\\restwithaspnet10erudio.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93DA2FE4-9B59-4F0B-BDDB-F4720474A830}|RestWithASPNET10Erudio\\RestWithASPNET10Erudio.csproj|d:\\code\\asp.net\\rest-with-asp-net-10-erudio\\04_restwithaspnet10erudio_scaffoldviavisualstudio\\restwithaspnet10erudio\\restwithaspnet10erudio\\restwithaspnet10erudio.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{93DA2FE4-9B59-4F0B-BDDB-F4720474A830}|RestWithASPNET10Erudio\\RestWithASPNET10Erudio.csproj|solutionrelative:restwithaspnet10erudio\\restwithaspnet10erudio.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93DA2FE4-9B59-4F0B-BDDB-F4720474A830}|RestWithASPNET10Erudio\\RestWithASPNET10Erudio.csproj|d:\\code\\asp.net\\rest-with-asp-net-10-erudio\\04_restwithaspnet10erudio_scaffoldviavisualstudio\\restwithaspnet10erudio\\restwithaspnet10erudio\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93DA2FE4-9B59-4F0B-BDDB-F4720474A830}|RestWithASPNET10Erudio\\RestWithASPNET10Erudio.csproj|solutionrelative:restwithaspnet10erudio\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93DA2FE4-9B59-4F0B-BDDB-F4720474A830}|RestWithASPNET10Erudio\\RestWithASPNET10Erudio.csproj|d:\\code\\asp.net\\rest-with-asp-net-10-erudio\\04_restwithaspnet10erudio_scaffoldviavisualstudio\\restwithaspnet10erudio\\restwithaspnet10erudio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93DA2FE4-9B59-4F0B-BDDB-F4720474A830}|RestWithASPNET10Erudio\\RestWithASPNET10Erudio.csproj|solutionrelative:restwithaspnet10erudio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93DA2FE4-9B59-4F0B-BDDB-F4720474A830}|RestWithASPNET10Erudio\\RestWithASPNET10Erudio.csproj|d:\\code\\asp.net\\rest-with-asp-net-10-erudio\\04_restwithaspnet10erudio_scaffoldviavisualstudio\\restwithaspnet10erudio\\restwithaspnet10erudio\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93DA2FE4-9B59-4F0B-BDDB-F4720474A830}|RestWithASPNET10Erudio\\RestWithASPNET10Erudio.csproj|solutionrelative:restwithaspnet10erudio\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RestWithASPNET10Erudio.http",
+              "DocumentMoniker": "D:\\Code\\ASP.NET\\rest-with-asp-net-10-erudio\\04_RestWithASPNET10Erudio_ScaffoldViaVisualStudio\\RestWithASPNET10Erudio\\RestWithASPNET10Erudio\\RestWithASPNET10Erudio.http",
+              "RelativeDocumentMoniker": "RestWithASPNET10Erudio\\RestWithASPNET10Erudio.http",
+              "ToolTip": "D:\\Code\\ASP.NET\\rest-with-asp-net-10-erudio\\04_RestWithASPNET10Erudio_ScaffoldViaVisualStudio\\RestWithASPNET10Erudio\\RestWithASPNET10Erudio\\RestWithASPNET10Erudio.http",
+              "RelativeToolTip": "RestWithASPNET10Erudio\\RestWithASPNET10Erudio.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-08-12T17:24:00.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RestWithASPNET10Erudio",
+              "DocumentMoniker": "D:\\Code\\ASP.NET\\rest-with-asp-net-10-erudio\\04_RestWithASPNET10Erudio_ScaffoldViaVisualStudio\\RestWithASPNET10Erudio\\RestWithASPNET10Erudio\\RestWithASPNET10Erudio.csproj",
+              "RelativeDocumentMoniker": "RestWithASPNET10Erudio\\RestWithASPNET10Erudio.csproj",
+              "ToolTip": "D:\\Code\\ASP.NET\\rest-with-asp-net-10-erudio\\04_RestWithASPNET10Erudio_ScaffoldViaVisualStudio\\RestWithASPNET10Erudio\\RestWithASPNET10Erudio\\RestWithASPNET10Erudio.csproj",
+              "RelativeToolTip": "RestWithASPNET10Erudio\\RestWithASPNET10Erudio.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-12T17:23:39.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\Code\\ASP.NET\\rest-with-asp-net-10-erudio\\04_RestWithASPNET10Erudio_ScaffoldViaVisualStudio\\RestWithASPNET10Erudio\\RestWithASPNET10Erudio\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "RestWithASPNET10Erudio\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\Code\\ASP.NET\\rest-with-asp-net-10-erudio\\04_RestWithASPNET10Erudio_ScaffoldViaVisualStudio\\RestWithASPNET10Erudio\\RestWithASPNET10Erudio\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "RestWithASPNET10Erudio\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-12T17:23:19.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Code\\ASP.NET\\rest-with-asp-net-10-erudio\\04_RestWithASPNET10Erudio_ScaffoldViaVisualStudio\\RestWithASPNET10Erudio\\RestWithASPNET10Erudio\\Program.cs",
+              "RelativeDocumentMoniker": "RestWithASPNET10Erudio\\Program.cs",
+              "ToolTip": "D:\\Code\\ASP.NET\\rest-with-asp-net-10-erudio\\04_RestWithASPNET10Erudio_ScaffoldViaVisualStudio\\RestWithASPNET10Erudio\\RestWithASPNET10Erudio\\Program.cs",
+              "RelativeToolTip": "RestWithASPNET10Erudio\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-12T17:22:56.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "D:\\Code\\ASP.NET\\rest-with-asp-net-10-erudio\\04_RestWithASPNET10Erudio_ScaffoldViaVisualStudio\\RestWithASPNET10Erudio\\RestWithASPNET10Erudio\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "RestWithASPNET10Erudio\\WeatherForecast.cs",
+              "ToolTip": "D:\\Code\\ASP.NET\\rest-with-asp-net-10-erudio\\04_RestWithASPNET10Erudio_ScaffoldViaVisualStudio\\RestWithASPNET10Erudio\\RestWithASPNET10Erudio\\WeatherForecast.cs",
+              "RelativeToolTip": "RestWithASPNET10Erudio\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-12T17:22:49.031Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
