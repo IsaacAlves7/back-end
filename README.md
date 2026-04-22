@@ -93,6 +93,34 @@ de Conta de Usuário Precisamos garantir que tentar novamente uma solicitação 
 Sistemas Distribuídos e Mensagens
 Precisamos garantir que o reprocessamento de mensagens de uma fila não resulte em processamento duplicado. Implementamos handlers que podem processar a mesma mensagem várias vezes sem efeitos colaterais.
 
+Um curso intensivo sobre como escalar a camada API
+
+A camada API (Interface de Programação de Aplicações) serve como a espinha dorsal para a comunicação entre clientes e os serviços backend em aplicações modernas baseadas na internet.
+
+Ela atua como a interface principal pela qual clientes, como aplicações web ou móveis, acessam a funcionalidade e os dados fornecidos pelo aplicativo. A Camada API de qualquer aplicação possui várias responsabilidades chave, tais como:
+
+Processe as solicitações recebidas dos clientes com base no contrato de API definido.
+
+Aplicar mecanismos e protocolos de segurança autenticando e autorizando clientes com base em suas credenciais ou tokens de acesso.
+
+Orquestre interações entre vários serviços backend e agregue as respostas recebidas deles.
+
+Gerencie as respostas formatando e retornando o resultado ao cliente.
+
+Devido ao papel central que as APIs desempenham na arquitetura da aplicação, elas se tornam críticas para a escalabilidade da aplicação.
+
+A escalabilidade da camada API é crucial pelos seguintes motivos:
+
+Gerenciando Picos de Carga e Tráfego: À medida que as aplicações se tornam populares, elas enfrentam aumento do tráfego e picos repentinos na demanda dos usuários. Uma API escalável pode gerenciar o aumento da carga de forma eficiente.
+
+Melhor Experiência do Usuário: A expectativa do usuário aumentou. A maioria dos usuários hoje em dia espera aplicações rápidas e responsivas. Uma API escalável garante que o aplicativo possa suportar um grande número de usuários sem comprometer o desempenho.
+
+Otimização de Custos e Recursos: APIs escaláveis desbloqueiam o caminho para uma melhor utilização dos recursos. Em vez de provisionar a infraestrutura antecipadamente para o nível mais alto de demanda, as instâncias são adicionadas e removidas com base na demanda, resultando em custos operacionais reduzidos.
+
+Neste artigo, vamos aprender os conceitos-chave que um desenvolvedor deve entender para a escalabilidade da API. Também vamos analisar algumas estratégias testadas e comprovadas para escalar a camada API com exemplos básicos de código para maior clareza. Por fim, também analisaremos algumas boas práticas que podem ajudar na escalabilidade da camada da API.
+
+<img width="1437" height="1600" alt="unnamed" src="https://github.com/user-attachments/assets/dacdf0f5-22e7-40f1-9aa0-fe56f9b94e6a" />
+
 # Back-end
 Contracts:
 
