@@ -121,6 +121,54 @@ Neste artigo, vamos aprender os conceitos-chave que um desenvolvedor deve entend
 
 <img width="1437" height="1600" alt="unnamed" src="https://github.com/user-attachments/assets/dacdf0f5-22e7-40f1-9aa0-fe56f9b94e6a" />
 
+Como realizamos a paginação no design de API?
+
+<img width="1100" height="1293" alt="unnamed" src="https://github.com/user-attachments/assets/25e5916e-3646-47a0-9a14-2e8131967bae" />
+
+A paginação é crucial no design de APIs para lidar com grandes conjuntos de dados de forma eficiente e melhorar o desempenho. Aqui estão seis técnicas populares de paginação:
+
+Paginação baseada em deslocamento:
+Essa técnica utiliza um deslocamento e um parâmetro limite para definir o ponto inicial e o número de registros a serem retornados.
+- Exemplo: GET /orders?offset=0&limit=3
+- Prós: Simples de implementar e entender.
+- Contras: Pode se tornar ineficiente para grandes deslocamentos, pois exige escanear e pular linhas.
+
+Paginação baseada em cursor:
+Esta técnica usa um cursor (um identificador único) para marcar a posição no conjunto de dados. Normalmente, o cursor é uma string codificada que aponta para um registro específico.
+
+Exemplo: GET /orders?cursor=xxx
+- Prós: Mais eficiente para grandes conjuntos de conjuntos, pois não exige escanear registros pulados.
+- Contras: Um pouco mais complexo de implementar e entender.
+
+Paginação baseada em páginas:
+Esta técnica especifica o número da página e o tamanho de cada página.
+
+Exemplo: GET /items?page=2&size=3
+- Prós: Fácil de implementar e usar.
+- Desvantagens: Problemas de desempenho semelhantes à paginação baseada em offset para números grandes de página.
+
+Paginação baseada em conjunto de chaves:
+Essa técnica usa uma chave para filtrar o conjunto de dados, geralmente a chave primária ou outra coluna indexada.
+
+Exemplo: GET /items?after_id=102&limit=3
+- Prós: Eficiente para grandes conjuntos de dados e evita problemas de desempenho com grandes deslocamentos.
+- Contras: Requer uma chave única e indexada, podendo ser complexo de implementar.
+
+Paginação baseada em tempo:
+Essa técnica utiliza um carimbo de data ou hora para paginar os registros.
+
+Exemplo: GET /items?start_time=xxx&end_time=yyy
+- Prós: Útil para conjuntos de dados ordenados por tempo, garante que nenhum registro seja perdido caso novos sejam adicionados.
+- Desvantagens: Requer um carimbo de tempo confiável e consistente.
+
+Paginação Híbrida:
+Essa técnica combina múltiplas técnicas de paginação para aproveitar seus pontos fortes.
+Exemplo: Combinar paginação por cursor e baseada no tempo para rolar de forma eficiente por registros ordenados no tempo.
+
+Exemplo: GET /items?cursor=abc&start_time=xxx&end_time=yyy
+- Prós: Pode oferecer o melhor desempenho e flexibilidade para conjuntos de dados complexos.
+- Desvantagens: Mais complexo de implementar e requer design cuidadoso.
+
 # Back-end
 Contracts:
 
