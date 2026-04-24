@@ -29,6 +29,8 @@ Eles expõem funcionalidades, possibilitam integrações e definem como equipes,
 
 APIs mal projetadas não irritam apenas os consumidores. Eles desaceleram as equipes, vazam dados, causam quedas e quebram integrações. Uma estrutura de resposta inconsistente pode se transformar em dezenas de parsers personalizados de clientes. Uma verificação de idempotência ausente pode resultar em cobranças duplicadas. Um caminho de autorização fraco pode causar uma violação de segurança.
 
+<img width="1600" height="1272" alt="unnamed" src="https://github.com/user-attachments/assets/cc8b15a4-75de-4183-a180-521d637bae5c" />
+
 APIs bem projetadas, por outro lado, criam alavancagem e ajudam a equipe a fazer mais. Algumas características definidoras são as seguintes:
 
 Eles funcionam como contratos, não apenas como pontos de acesso.
