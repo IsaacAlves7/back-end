@@ -210,6 +210,83 @@ Don’t log sensitive data like credit card info, passwords, credentials, etc.
 
 Over to you: What else would you do to build a secure API?
 
+Na última edição, exploramos vários estilos arquitetônicos de APIs, cada um com seus pontos fortes únicos. Apesar das muitas opções, o REST continua sendo o mais popular. No entanto, sua popularidade não implica simplicidade. O REST apenas define recursos e o uso de métodos HTTP. Para dominar a arte de criar APIs REST, precisamos seguir certas diretrizes para garantir que projetemos APIs eficientes e amigáveis ao usuário.
+
+Nesta edição, abordamos os detalhes mais específicos do design da API REST. Isso inclui:
+
+Detectando problemas de API. Aprendemos a identificar os sinais evidentes de APIs ineficientes. Os "maus cheiros" indicam a necessidade de um redesenho ou melhoria.
+
+Entendendo a maturidade da API. Mergulhamos no Modelo de Maturidade Richardson (RMM), um modelo que nos ajuda a distinguir o bom do mau design de APIs ao avaliar o quão próximo um API se alinha ao framework REST.
+
+Voltando ao básico. Para garantir que todos estamos alinhados, revisamos os componentes centrais das APIs REST - verbos HTTP e códigos de status.
+
+Para dar vida a esses conceitos, vamos abordar o primeiro dos três exemplos práticos desta edição, com o design de um componente de cadastro e login. Na próxima edição, continuaremos e exploraremos como construir uma API para carrinho de compras e estudar o redesenho da API de pagamento da Stripe.
+
+Detecção de Problemas de API
+Como podemos saber quando uma API não está correspondendo ao seu potencial e precisa de um redesenho? Assim como o código, APIs podem emitir um "cheiro" distinto quando não estão funcionando como deveriam. Reconhecer esses sinais de alerta é crucial. Vamos analisar alguns cenários concretos que sugerem que uma API pode não estar à altura.
+
+Por exemplo, suponha que tenhamos estudado minuciosamente a documentação da API, mas ainda estamos tendo dificuldades para entender as nuances de sua funcionalidade. Essa necessidade de esclarecimento constante dos proprietários da API é uma indicação clara de uma API que poderia ser mais amigável ao usuário.
+
+Considere outro exemplo em que parâmetros e resultados da API são vagamente definidos. Essa falta de clareza pode levar à confusão e possíveis erros. Isso desacelera o desenvolvimento e dificulta a colaboração eficaz entre equipes.
+
+Além disso, pense em uma situação em que nossas equipes de front-end e back-end precisam colaborar extensivamente apenas para testar e validar comportamentos da API. Esse nível de sobrecarga de coordenação sugere uma API que não é tão intuitiva ou bem documentada quanto deveria ser.
+
+Como proprietários de APIs, podemos notar diferentes tipos de sinais de alerta. Se nos vemos constantemente respondendo a dúvidas de uso da API, é como se estivéssemos usando um chapéu de atendimento ao cliente em meio período. Esse cenário aponta para uma API que pode se beneficiar de uma documentação mais detalhada e possivelmente de um design mais intuitivo.
+
+Outro sinal claro pode ser o aumento de pedidos de melhorias menores. Se parece que estamos sempre ajustando e ajustando nossas APIs, isso pode sugerir que elas não são tão robustas ou flexíveis quanto deveriam ser.
+
+Esses exemplos do mundo real destacam os tipos de desafios que indicam que nossas APIs poderiam precisar de alguns ajustes finos.
+
+Entendendo os Níveis de Maturidade da API
+O Modelo de Maturidade Richardson (RMM) [3], introduzido por Leonard Richardson em 2008, serve como uma ferramenta valiosa para entender melhor o conceito de maturidade da API e o quão bem uma API se adequa aos conceitos REST. Esse modelo nos ajuda a identificar os pontos fortes e fracos do nosso design de API.
+
+O RMM define quatro níveis para avaliar o quão próximo um API está em conformidade com o framework REST. Os principais fatores que determinam a maturidade de um serviço são seu URI, métodos HTTP e HATEOAS (Hypermedia como Motor do Estado da Aplicação).
+
+<img width="1308" height="709" alt="unnamed" src="https://github.com/user-attachments/assets/fcc1529d-c496-495b-a1ab-704a874932d5" />
+
+Nível 0: O Pântano do POX
+No Nível 0, APIs usam um único URI e um único método HTTP, tipicamente POST. Essa abordagem não aproveita as capacidades reais do protocolo HTTP e carece de uma forma uniforme de interagir com os recursos do sistema. Martin Fowler chamou esse nível de "O Pântano do POX (Simples XML)" devido ao seu sistema simplista no estilo RPC.
+
+Nível 1: Recursos
+O Nível 1 introduz o conceito de recursos, uma pedra angular do design RESTful. Cada recurso é identificado de forma única por um URI, criando uma forma mais fácil de gerenciar e interagir com diferentes elementos de um sistema. No entanto, ainda utiliza apenas um método HTTP, o POST, limitando todo o potencial do REST.
+
+Nível 2: Verbos HTTP
+O Nível 2 representa um avanço no design RESTful. Os serviços desse nível não apenas usam URIs únicos para recursos, mas também aproveitam diferentes métodos HTTP (como GET, POST, PUT, DELETE) que correspondem a operações sobre esses recursos. Essa abordagem torna nossas APIs mais intuitivas e as alinha mais de perto com os princípios da web. Esse nível de maturidade é o mais popular.
+
+Level 3: HATEOAS
+O Nível 3 traz o conceito de HATEOAS (Hypermedia como o Motor do Estado da Aplicação). O HATEOAS torna nossas APIs autodescritivas, melhorando sua usabilidade e descoberta. Quando um cliente interage com um recurso, a API fornece informações não apenas sobre o próprio recurso, mas também sobre recursos relacionados e possíveis ações, tudo representado por meio de links de hipermídia.
+
+No exemplo acima, quando solicitamos a consulta da conta 12345, não só recebemos o saldo da conta ($100), mas a resposta também nos orienta sobre os próximos passos e como executá-los via URIs. Por exemplo, poderíamos depositar mais dinheiro na conta 12345 navegando para /account/12345/deposit.
+
+O RMM oferece uma estrutura eficaz para nos ajudar a compreender e implementar melhor os princípios do RESTful no design da nossa API. É essencial lembrar, enquanto buscamos melhorar nossas APIs, que o Nível 2 é pré-requisito para o REST [3].
+
+Fundamentos
+Verbos HTTP
+Ao projetar um sistema, frequentemente encontramos duas camadas: a camada de serviço web, responsável por lidar com requisições web, e a camada de serviço, onde ocorre o trabalho real, como interagir com bancos de dados, lidar com filas de mensagens e se comunicar com outros serviços.
+
+Na camada de serviço web, utilizamos verbos HTTP. Esses verbos definem as operações que podemos realizar em vários recursos. Na camada de serviço, utilizamos operações CRUD (Crear, Lender, Atualizar, Deletar) para definir essas operações.
+
+O diagrama abaixo lista os verbos HTTP comuns e seus mapeamentos para métodos de serviço. É essencial entender que nem sempre há um mapeamento direto um a um entre verbos HTTP e métodos de serviço. Por exemplo, o verbo GET pode ser usado para recuperar um único recurso ou uma lista inteira de recursos. Da mesma forma, tanto os verbos PUT quanto PATCH podem ser usados para modificar um recurso. No entanto, o verbo PATCH é usado especificamente quando queremos fazer modificações parciais em um recurso.
+
+Embora os cinco métodos HTTP devam satisfazer a maioria das nossas necessidades, pode haver cenários em que precisamos definir operações personalizadas. Temos duas formas de abordar isso:
+
+Mapear operações personalizadas para verbos HTTP padrão. Por exemplo, poderíamos mapear uma operação de busca para o verbo GET. No entanto, isso pode levar a alguma confusão, pois o verbo pode não estar totalmente alinhado com o propósito da operação. É vital ter uma documentação abrangente da API para esclarecer esses mapeamentos.
+
+Defina um método HTTP personalizado. Em alguns casos, podemos precisar de uma operação específica que não é coberta por verbos HTTP padrão. Por exemplo, em jogos online, podemos precisar resetar uma partida. Podemos definir um método personalizado, como RESET, para esse propósito.
+
+<img width="1600" height="494" alt="unnamed" src="https://github.com/user-attachments/assets/561efae2-2dbd-44fc-aa78-b5e15d0fb066" />
+
+Códigos de Status
+O REST é construído sobre o protocolo HTTP. Portanto, nossas APIs devem usar códigos de status HTTP para garantir um comportamento consistente e previsível. O diagrama abaixo mostra alguns códigos de status HTTP comuns.
+
+<img width="1312" height="1178" alt="unnamed" src="https://github.com/user-attachments/assets/67a4107d-89f5-4c2a-9b5a-b4490dc5e1ef" />
+
+No entanto, os códigos de status HTTP não são exaustivos para todos os possíveis resultados de uma chamada de API. Também devemos estabelecer nosso próprio conjunto de códigos de status internos ou códigos de erro para comunicar questões específicas relacionadas ao serviço. Uma forma eficiente de gerenciar esses códigos é mantendo uma biblioteca comum para todos os códigos do sistema. Isso facilita o registro e compartilhamento entre diferentes repositórios de código.
+
+Por exemplo, vamos supor que o serviço de usuário use códigos de mensagem na faixa de 50000 a 59999, enquanto o serviço de carrinho de compras usa códigos de 60000 a 69999. Podemos envolver esses detalhes da mensagem em uma resposta HTTP e enviá-los de volta aos clientes. Essa prática beneficia muito o atendimento ao cliente, pois eles conseguem identificar facilmente problemas com base no código retornado.
+
+Uma regra de ouro que devemos sempre seguir é devolver um código para cada resposta, mesmo que seja um timeout. Seguir essa regra garante um comportamento previsível e consistente. É crucial para manter um serviço de alta qualidade.
+
 # Back-end
 Contracts:
 
