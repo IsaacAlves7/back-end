@@ -7,6 +7,8 @@
   </tr>
 </table>
 
+<img width="1559" height="1536" alt="unnamed" src="https://github.com/user-attachments/assets/5877579c-b198-4c42-902e-6deed5c61635" />
+
 > Versículo chave: "Consagre ao Senhor tudo o que você faz, e os seus planos serão bem-sucedidos." - Provérbios 16:3
 
 Desenvolvimento backend exige conhecimento de múltiplos aspectos. Aqui está um mapa mental do que tudo o que um desenvolvedor deve aprender:
