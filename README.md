@@ -1,3 +1,19 @@
+Código de status HTTP que você deveria conhecer
+
+<img width="1206" height="1166" alt="unnamed" src="https://github.com/user-attachments/assets/c5ee79b7-88ae-47a0-9a87-ae66e9a106e3" />
+
+Os códigos de resposta para HTTP são divididos em cinco categorias:
+
+Informacional (100-199)
+Sucesso (200-299)
+Redirecionamento (300-399)
+Erro do Cliente (400-499)
+Erro do Servidor (500-599)
+
+Esses códigos são definidos no RFC 9110. Para evitar que você lea o documento inteiro (que tem cerca de 200 páginas), aqui está um resumo dos mais comuns:
+
+Deixa a palavra para você: o código de status HTTP 401 é para Não Autorizado. Você pode explicar a diferença entre autenticação e autorização, e qual deles o código 401 verifica?
+
 <img width="1272" height="1036" alt="unnamed" src="https://github.com/user-attachments/assets/c5ec0ec2-39cb-44fc-944d-c965caef7aeb" />
 <img width="550" height="684" alt="unnamed" src="https://github.com/user-attachments/assets/816e8ba9-b462-4103-b9b3-120df5b9e502" />
 
