@@ -11,6 +11,108 @@
 
 > Versículo chave: "Consagre ao Senhor tudo o que você faz, e os seus planos serão bem-sucedidos." - Provérbios 16:3
 
+A Fundação da REST API: HTTP
+<img width="1348" height="1097" alt="unnamed" src="https://github.com/user-attachments/assets/ece0f685-a166-4fdf-8277-714dfb951169" />
+
+Nesta edição, vamos aprofundar a base da comunicação de dados para a World Wide Web - HTTP.
+
+O que é Hypertext?
+HTTP, ou HyperText Transfer Protocol, deve seu nome a 'hipertexto'.
+
+Então, o que exatamente é hipertexto?
+
+Imagine uma mistura de texto, imagens e vídeos costurados pela magia dos hiperlinks. Esses links funcionam como portais que nos permitem pular de um conjunto de hipertexto para outro. HTML, ou Linguagem de Marcação de Hipertexto, é um exemplo perfeito de hipertexto.
+
+HTML é um arquivo de texto simples. Ele está repleto de muitas tags que definem links para imagens, vídeos e mais. Depois que o navegador interpreta essas tags, ele transforma o arquivo de texto aparentemente comum em uma página web cheia de texto e imagens.
+
+HTTP/1.1, HTTP/2 e HTTP/3
+O HTTP passou por transformações significativas desde sua criação em 1989 com a versão 0.9. Vamos dar uma volta na memória e ver os problemas que cada versão do HTTP aborda. O diagrama abaixo mostra as principais melhorias.
+
+HTTP/1.0 foi finalizado e formalmente documentado em 1996. Essa versão tinha uma limitação de chave: cada requisição para o mesmo servidor exigia uma conexão TCP separada.
+
+O HTTP/1.1 chegou em seguida, em 1997. Introduziu o conceito de 'conexão persistente', o que significa que uma conexão TCP poderia ser deixada aberta para reutilização. Apesar dessa melhoria, o HTTP/1.1 não conseguiu resolver o problema do bloqueio 'Head-of-Line' (HOL). Em termos simples, o bloqueio HOL ocorre quando todos os slots paralelos de requisição em um navegador são preenchidos, forçando as requisições subsequentes a aguardarem até que as anteriores estejam concluídas.
+
+HTTP/2.0, publicado em 2015, buscou resolver a questão do bloqueio HOL. Implementou o 'multiplexamento de requisição', uma estratégia para eliminar o bloqueio HOL na camada de aplicação. Como ilustrado no diagrama abaixo, o HTTP/2.0 introduziu o conceito de 'fluxos' HTTP. Essa abstração permite a multiplexação de diferentes trocas HTTP na mesma conexão TCP, nos libertando da necessidade de enviar cada fluxo em ordem. No entanto, o bloqueio HOL ainda poderia ocorrer na camada de transporte (TCP).
+
+O HTTP/3.0 fez sua estreia com um rascunho publicado em 2020. Posicionado como sucessor do HTTP/2.0, ele substitui o TCP pelo QUIC como protocolo de transporte subjacente. Isso elimina efetivamente o bloqueio HOL na camada de transporte. O QUIC é baseado no UDP. Ele introduz os fluxos como cidadãos de primeira classe na camada de transporte. Os fluxos QUIC compartilham a mesma conexão QUIC, não exigindo apertos de mão adicionais ou iniciações lentas para criar novas. Os fluxos QUIC são entregues de forma independente. Isso significa que, na maioria dos casos, a perda de pacotes em um fluxo não impacta outros.
+
+<img width="1348" height="1097" alt="unnamed" src="https://github.com/user-attachments/assets/4a4570f6-bd0b-4113-8593-ade2c476ac4d" />
+
+Cabeçalhos HTTP
+Cabeçalhos HTTP desempenham um papel crucial em como clientes e servidores enviam e recebem dados. Eles fornecem uma forma estruturada para que essas entidades comuniquem metadados importantes sobre a solicitação ou resposta. Esses metadados podem conter várias informações, como o tipo de dado enviado, seu comprimento, como são comprimidos e mais.
+
+Um cabeçalho HTTP consiste em vários campos, cada um com um papel e significado específicos. Agora que entendemos o que são cabeçalhos HTTP, vamos nos aprofundar em alguns campos HTTP específicos.
+
+Campos HTTP
+Quando enviamos requisições HTTP para um servidor, vários campos comuns desempenham um papel crítico. Vamos dissecar alguns deles.
+
+Host: Este é o nome de domínio do servidor.
+
+Comprimento do Conteúdo: Este campo no cabeçalho da requisição ou resposta desempenha um papel crucial na transferência de dados. Ele indica especificamente o tamanho do corpo da solicitação ou resposta em bytes. Isso ajuda o receptor a entender quando a mensagem atual termina e potencialmente se preparar para a próxima, especialmente em casos em que múltiplas mensagens HTTP estão sendo enviadas pela mesma conexão.
+
+Conexão: Este campo é crucial em conexões HTTP persistentes, onde uma única conexão TCP é usada para enviar e receber múltiplas requisições e respostas HTTP. Discutiremos isso com mais detalhes.
+
+Tipo de conteúdo: Este campo informa ao cliente o formato dos dados que está recebendo.
+
+Codificação de conteúdo: Este campo indica o formato de compressão usado para os dados. Por exemplo, se o cliente vê codificação 'gzip', ele sabe que precisa descomprimir os dados.
+
+<img width="1298" height="1600" alt="unnamed" src="https://github.com/user-attachments/assets/c6f283f6-b36d-4c3b-a5c2-663765921e6b" />
+
+HTTP GET vs HTTP POST
+Os protocolos HTTP definem vários métodos ou 'verbos' para realizar diferentes ações em recursos web. Os mais usados são GET, POST, PUT e DELETE, que são frequentemente usados para ler, criar, atualizar e excluir recursos. Métodos menos comuns incluem HEAD, CONNECT, OPTIONS, TRACE e PATCH, que abordamos em nossas edições anteriores de "API Design".
+
+Uma pergunta comum em entrevistas é: "Qual é a diferença entre GET e POST?" Vamos mergulhar nas definições deles.
+
+HTTP GET: Este método recupera recursos do servidor via URLs sem produzir nenhum outro efeito. Como as requisições GET geralmente não possuem um corpo de payload, elas permitem o marcação, compartilhamento e cache de páginas web.
+
+HTTP POST: Este método interage com recursos com base no corpo da carga útil. A interação varia dependendo do tipo de recurso. Por exemplo, se estivermos deixando um comentário após comprar um iPhone 14, clicar em "enviar" envia uma solicitação POST ao servidor com o comentário no corpo da mensagem. Embora não haja um limite definido para o tamanho do corpo da mensagem em uma requisição POST pelo próprio protocolo HTTP, na prática, navegadores e servidores frequentemente impõem seus próprios limites.
+
+Entendendo as Características do GET e do POST
+Métodos HTTP possuem certas propriedades que definem como interagem com os recursos do servidor. Duas dessas propriedades são se são 'não mutantes' e 'idempotentes'.
+
+Um método que não muta não altera nenhum recurso do servidor. Por outro lado, um método idempotente produz o mesmo resultado, independentemente de quantas vezes ele seja repetido.
+
+HTTP GET: O método GET recupera dados sem causar alterações, tornando-os não mutantes. Além disso, repetir uma requisição GET não altera o resultado, tornando-o idempotente.
+
+HTTP POST: Diferente do GET, o método POST envia dados que podem modificar recursos do servidor, tornando-os potencialmente mutantes. Além disso, se repetirmos uma solicitação POST, ele pode criar recursos adicionais, tornando-se não idempotente.
+
+No entanto, é importante notar que o comportamento real pode depender de como o servidor implementa esses métodos. Embora os padrões sugiram certos comportamentos, desenvolvedores às vezes usam esses métodos de maneiras não padrão. Por exemplo, um método GET pode ser usado para deletar dados (tornando-os tanto mutantes quanto não idempotentes), ou um método POST pode ser usado para recuperar dados (tornando-o não mutante e potencialmente idempotente).
+
+Um exemplo infame de uso não padrão envolveu um blogueiro que implementou operações de exclusão de postagens com HTTP GET, assumindo que ninguém visitaria o blog. Mas quando o Google rastreou o blog, todas as postagens foram deletadas!
+
+Também é essencial lembrar que, quando se trata de segurança e prevenção de vazamentos de informações, nem GET nem POST são inerentemente seguros. Os parâmetros GET são visíveis na URL, enquanto os corpos POST, embora não visíveis na URL, ainda podem ser interceptados se não criptografados. Para garantir a transmissão segura de dados, recomenda-se o uso de HTTPS, um tema que discutiremos com mais detalhes adiante.
+
+HTTP Keep-Alive vs TCP keepalive
+Discutimos como HTTP pode iniciar uma conexão persistente usando "Connection: Keep-Alive". Lembre-se que, na edição sobre o TCP, também mencionamos o mecanismo keepalive do TCP. Eles são iguais? Não, são bem diferentes:
+
+O HTTP Keep-Alive, vinculado a conexões HTTP persistentes, opera na camada de aplicação.
+
+O TCP keepalive, atuando na camada de transporte, mantém uma conexão TCP ativa durante períodos de inatividade na troca de dados.
+
+Vamos aprofundar mais.
+
+HTTP Keep-Alive
+HTTP, exceto HTTP/3, é construído sobre TCP. Estabelecer uma conexão HTTP requer um handshake TCP de 3 vias. Após enviar uma requisição HTTP e receber uma resposta, a conexão TCP se desconecta.
+
+Enviar múltiplas requisições para o mesmo servidor dessa forma é bastante ineficiente. Não seria melhor reutilizar a mesma conexão TCP? Esse é o propósito do HTTP Keep-Alive. Ele mantém a conexão TCP até que qualquer uma das partes solicite a desconexão.
+
+O HTTP/1.1 ativa o HTTP Keep-Alive por padrão.
+
+O HTTP Keep-Alive reduz a sobrecarga de abrir e fechar conexões TCP. É ainda mais poderoso quando combinado com HTTP/2, que introduz o conceito de "streams".
+
+Streams nos permitem enviar múltiplas requisições simultaneamente sem esperar respostas do servidor. Mais importante ainda, essas solicitações e respostas podem ser tratadas fora de ordem, o que não é possível apenas com HTTP Keep-Alive.
+
+O diagrama comparativo abaixo mostra a diferença entre streams HTTP Keep-Alive e HTTP/2. Normalmente, esperamos a primeira resposta antes de enviar uma segunda solicitação. Com streams HTTP/2, podemos enviar múltiplas requisições simultaneamente sem esperar a primeira resposta, e o servidor pode responder fora de ordem.
+
+Por que isso é importante? Esse recurso é crucial para evitar o bloqueio head-of-line (HOL). Em versões anteriores do HTTP, se o servidor demora muito para processar uma solicitação, as requisições subsequentes precisam esperar, causando atrasos. Mas com fluxos HTTP/2, cada requisição é independente. Mesmo que um servidor demore mais para processar uma solicitação, ele ainda pode responder a outras solicitações. As respostas podem ser retornadas assim que estiverem prontas, mesmo que isso signifique que não estejam na ordem original da solicitação.
+
+<img width="1268" height="829" alt="unnamed" src="https://github.com/user-attachments/assets/75c81a4f-1ace-4903-abe0-e4a09e62b3f8" />
+
+Manter TCP vivo
+O TCP keepalive não tem relação com HTTP Keep-Alive. Em uma conexão TCP, ambas as partes permanecem no estado ESTABELECIDO até que uma delas o encerre. Se uma das partes se desconectar sem avisar a outra, a parte restante não saberia disso. O TCP keepalive resolve isso enviando sondas periodicamente quando não há troca de dados. Discutimos isso em nossa edição anterior com TCP. O diagrama a seguir deve servir como uma atualização.
+
+<img width="466" height="555" alt="unnamed" src="https://github.com/user-attachments/assets/c1822161-87f1-4aa0-b137-3ae46ec10f70" />
+
 Desenvolvimento backend exige conhecimento de múltiplos aspectos. Aqui está um mapa mental do que tudo o que um desenvolvedor deve aprender:
 
 1. Fundamentos: Isso inclui tópicos como backend vs frontend, cliente-servidor, DNS, etc.
