@@ -1,3 +1,5 @@
+<img width="720" height="904" alt="Screenshot_20240618-224002_Instagram" src="https://github.com/user-attachments/assets/d2955e62-42cc-43d8-bc3e-986919988bf8" />
+
 Código de status HTTP que você deveria conhecer
 
 <img width="1206" height="1166" alt="unnamed" src="https://github.com/user-attachments/assets/c5ee79b7-88ae-47a0-9a87-ae66e9a106e3" />
