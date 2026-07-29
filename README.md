@@ -357,8 +357,8 @@ O design orientado por domínio reconhece múltiplos tipos de modelos. Por exemp
 
 <table>
     <tr>
-        <td><img height="800" alt="0_Ahy_hXrFysq-_j00" src="https://github.com/user-attachments/assets/680cfc97-0f28-42c4-876a-fd5a2ce7a8ed" /></td>
-        <td><img height="800" src="https://github.com/user-attachments/assets/28e98845-bfde-4ecb-a5f7-84b24328cdb3"></td>
+        <td><img height="777" alt="0_Ahy_hXrFysq-_j00" src="https://github.com/user-attachments/assets/680cfc97-0f28-42c4-876a-fd5a2ce7a8ed" /></td>
+        <td><img height="777" src="https://github.com/user-attachments/assets/28e98845-bfde-4ecb-a5f7-84b24328cdb3"></td>
     </tr>
 </table>
 
