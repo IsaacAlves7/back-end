@@ -355,7 +355,12 @@ Quando você fala dessas **“camadas do domínio”**: entidades, objetos-valor
 
 O design orientado por domínio reconhece múltiplos tipos de modelos. Por exemplo, uma entidade é um objeto definido não por seus atributos, mas por sua identidade. Por exemplo, a maioria das companhias aéreas atribui um número único aos assentos de cada voo: essa é a identidade do assento. Em contraste, um objeto valor é um objeto imutável que contém atributos, mas não possui identidade conceitual. Quando as pessoas trocam cartões de visita, por exemplo, elas se importam apenas com as informações do cartão (seus atributos), em vez de tentar distinguir entre cada cartão único.
 
-<img src="https://github.com/user-attachments/assets/28e98845-bfde-4ecb-a5f7-84b24328cdb3" align="right">
+<table>
+    <tr>
+        <td><img width="800" height="800" alt="0_Ahy_hXrFysq-_j00" src="https://github.com/user-attachments/assets/680cfc97-0f28-42c4-876a-fd5a2ce7a8ed" /></td>
+        <td><img src="https://github.com/user-attachments/assets/28e98845-bfde-4ecb-a5f7-84b24328cdb3"></td>
+    </tr>
+</table>
 
 Dentro do domínio, as **entidades** representam conceitos que têm identidade persistente ao longo do tempo, mesmo que seus atributos mudem. Elas capturam comportamentos essenciais ligados a um identificador único, como um `Cliente`, um `Pedido` ou um `Veículo`. Já os **objetos-valor** são as estruturas que descrevem características imutáveis, conceituais, que não têm identidade própria, mas têm significado. Eles existem para impedir que o domínio fique cheio de tipos primitivos sem sentido, substituindo-os por tipos ricos, como `Email`, `CPF`, `Placa`, `Endereço` ou `Dinheiro`. Essa relação entre entidades e objetos-valor sustenta a expressividade do vocabulário ubíquo dentro do código.
 
