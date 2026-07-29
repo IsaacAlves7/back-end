@@ -230,8 +230,6 @@ Quando termos utilizados no projeto vão sendo traduzidos, de acordo com o uso e
 
 > O custo de toda a tradução, além do risco de entendimento errado, é simplesmente muito alto. Um projeto precisa de uma linguagem em comum que seja mais robusta que o mínimo denominador comum.
 
-<a href=""><img src="https://github.com/user-attachments/assets/5ac09617-ba80-4f3f-955a-62bd9dfe77ee" align="right" height="77"></a>
-
 A Linguagem Onipresente (ubiquitous language) não está limitada a diagramas em <a href="">UML (Unified Modeling Languages, ou Linguagem de Modelagem Unificada)</a>, mas principalmente, define em seu vocabulário nome das classes e operações de destaque. Inclui regras para implantar um dicionário uniforme e explícito para o modelo, para que o mesmo possa ser utilizado com o máximo de eficiência possível.
 
 O **Diagram as code** (Diagrama como código) é uma abordagem de criação de diagramas que utiliza código, em vez de ferramentas gráficas, para desenhar e manter diagramas. Essa abordagem permite que os diagramas sejam criados e atualizados utilizando linguagens de programação ou marcadores, em vez de ferramentas de desenho gráfico. A prática de "Diagram as code" (Diagrama como código) pode auxiliar no Domain-Driven Design (DDD), pois é uma prática útil no DDD que ajuda a manter a documentação atualizada, facilita a colaboração, fornece controle de versão e permite a geração automática de diagramas. Vantagens do "Diagram as code" no DDD:
@@ -243,8 +241,6 @@ O **Diagram as code** (Diagrama como código) é uma abordagem de criação de d
 5. **Integração com o ciclo de desenvolvimento**: O "Diagram as code" pode ser integrado ao ciclo de desenvolvimento de software, permitindo que os desenvolvedores trabalhem no modelo de domínio em paralelo com o desenvolvimento do código.
 
 As ferramentas permitem que você crie diagramas como código, utilizando sintaxes específicas para desenhar os diagramas. Em seguida, elas geram imagens ou diagramas a partir do código. Algumas ferramentas populares para "Diagram as code" incluem:
-
-<a href="https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa700003"><img src="https://github.com/user-attachments/assets/cd3deff0-176a-4d9b-8735-0a1b2b1d2a33" align="right" height="77"></a>
 
 - Mermaid
 - **PlantUML**
