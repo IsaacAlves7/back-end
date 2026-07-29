@@ -344,6 +344,10 @@ Esses padrões, juntamente com outros conceitos e técnicas, podem ser aplicados
 
 <table>
     <tr>
+        <td>Camadas do DDD</td>
+        <td>Camadas dos Microsserviços (Complementares)</td>
+    </tr>
+    <tr>
         <td><img height="953" alt="ddd_layers" src="https://github.com/user-attachments/assets/a75c9848-9e85-4ecb-b171-821c5b7ba478" /></td>
         <td><img height="953" alt="layers-microservices" src="https://github.com/user-attachments/assets/47fc550d-209a-40ff-87b0-11443242afa8" /></td>
     </tr>
