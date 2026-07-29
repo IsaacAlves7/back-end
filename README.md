@@ -249,13 +249,9 @@ As ferramentas permitem que você crie diagramas como código, utilizando sintax
 
 Normalmente os especialistas de um domínio, diretores, administradores, analistas, técnicos, possuem pouca familiaridade com o jargão técnico utilizado no desenvolvimento de software, mas utilizam os jargões próprios de sua área de atuação. A partir desta realidade, os especialistas de um domínio descrevem superficialmente o que necessitam, fazendo com que desenvolvedores criem abstrações que sustentem o design da aplicação. Com isso, uma compreensão uniforme vai se deteriorando exponencialmente.
 
-<a href="https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa700003"><img src="https://github.com/user-attachments/assets/d51f18a5-193c-49ef-8a83-83f42f1924f5" align="right" height="277"></a>
-
 Como solução a esta dispersão na comunicação, devemos usar a linguagem baseada no modelo de forma exaustiva até que a comunicação seja fluida e compreensível entre os diversos setores envolvidos no projeto. Para que possamos alcançar esta fluência, os especialistas do domínio devem vetar termos ou estruturas que não transmitam uma compreensão clara acerca das funcionalidades envolvidas; os desenvolvedores devem se empenhar no cuidado com ambiguidades ou inconsistências que possam corromper o modelo proposto. Ou seja, é um esforço conjunto entre todos os envolvidos, mas, é essencialmente necessário que ocorra.
 
 Como identificar os especialistas de domínio? Especialistas de domínio são os profissionais envolvidos no dia a dia da operação, nos mais diferentes setores, ou seja, são os “conhecedores” do negócio (stakeholders). Normalmente estes especialistas são analistas, técnicos, engenheiros, podendo ser todo aquele que possui a compreensão acerca do fluxo de operação da empresa. Os especialistas de domínio detém o conhecimento sobre as necessidades e requisitos necessários para o processamento das atividades organizacionais.
-
-<img src="https://github.com/user-attachments/assets/3e5b0f4e-5517-4b6d-a8a8-cd650c6f577d" align="right" height="277">
 
 Em essência, o DDD surgiu para enfrentar a complexidade inerente ao desenvolvimento de software em domínios desafiadores, permitindo que os sistemas sejam projetados de forma que o código seja uma expressão direta das regras e processos do negócio. Com o tempo, o DDD ganhou popularidade e passou a ser usado em diversos contextos, especialmente em sistemas corporativos onde o domínio de negócio é complexo e sujeito a constantes mudanças.
 
