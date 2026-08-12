@@ -46,14 +46,15 @@ Por isso costuma-se dizer que o DDD é uma **abordagem de modelagem e design est
 
 Em termos de níveis de abstração:
 
-| Nível             | Exemplos                                               |
-| ----------------- | ------------------------------------------------------ |
-| Negócio           | Regras de negócio, processos, especialistas do domínio |
-| Design de Domínio | DDD, Bounded Context, Ubiquitous Language, Agregados   |
-| Arquitetura       | Clean Architecture, Hexagonal, Onion, Microsserviços   |
-| Design de Código  | SOLID, GoF, GRASP                                      |
-| Programação       | OOP, Funcional, Procedural                             |
-| Implementação     | Estruturas de Dados, Algoritmos, Frameworks            |
+| Nível             | Exemplos                                                                                      |
+| ----------------- | --------------------------------------------------------------------------------------------- |
+| Negócio           | Regras de negócio, processos, especialistas do domínio                                        |
+| Design de Domínio | DDD, Bounded Context, Ubiquitous Language, Agregados                                          |
+| Arquitetura       | Clean Architecture, Hexagonal, Onion, Microsserviços                                          |
+| Design de Código  | SOLID, GoF, GRASP                                                                             |
+| Programação       | OOP, Funcional, Procedural                                                                    |
+| Implementação     | Estruturas de Dados, Algoritmos, Frameworks                                                   |
+| Testes            | Abordagens TDD/BDD, Testes de Unidade, Integração, End-to-End (E2E), Test doubles: Mocks/Stubs|
 
 Então eu diria que o DDD atua principalmente no **design do software**, servindo como uma ponte entre o entendimento do negócio e a arquitetura. Ele influencia a arquitetura, mas não a substitui; influencia o código, mas não determina se você usará orientação a objetos, programação funcional ou outro paradigma.
 
