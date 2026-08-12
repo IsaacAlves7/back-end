@@ -59,6 +59,14 @@ Em termos de níveis de abstração:
 > [!Note]
 > **Nota**: É muito comum ver pessoas confundindo LIQUID com alguma variante de SOLID por conta do nome fluído, mas em design de software tático os padrões de referência continuam sendo SOLID, GoF, GRASP, KISS, DRY e YAGNI! Ele se refere ao Template Engine (Shopify) ou Filosofia de Deploy Contínuo (JFrog).
 
+Por que esses exemplos?
+
+- TDD (Test-Driven Development): Guia o design tático e a implementação do código através de testes. BDD (Behavior-Driven Development): Conecta a linguagem de negócio aos testes (andando lado a lado com a Ubiquitous Language do DDD).
+
+- Pirâmide de Testes (Unidade, Integração, E2E): Representa os diferentes níveis em que testamos a aplicação, validando desde funções isoladas e contratos de arquitetura até o fluxo completo do negócio.
+
+- Mocks/Stubs/Fakes: Ferramentas de dublês de teste para isolar o domínio das dependências externas e de infraestrutura.
+
 Então eu diria que o DDD atua principalmente no **design do software**, servindo como uma ponte entre o entendimento do negócio e a arquitetura. Ele influencia a arquitetura, mas não a substitui; influencia o código, mas não determina se você usará orientação a objetos, programação funcional ou outro paradigma.
 
 De forma lúdica, se o software fosse uma cidade:
@@ -150,6 +158,9 @@ Falaremos sobre a maneira de se aproximar do problema e da solução: o caminho 
 
 > [!Warning]
 > Quando não usar DDD? Às vezes só é necessário um CRUD (entrega de um produto funcional)! DDD não é uma solução para tudo. A maioria dos sistemas possui uma boa parte composta por cadastros básicos (CRUD) e não seria adequado usar DDD para isso. A engenharia de domínios tem sido criticada por focar demais em "engenharia para reutilização" ou "engenharia com reutilização" de recursos genéricos de software, em vez de se concentrar em "engenharia para uso", de modo que a visão de mundo, linguagem ou contexto de um indivíduo seja integrado ao design do software. Um CRUD é praticamente o estágio MVP funcional, voltado a registrar, atualizar e consultar informações, geralmente com baixo acoplamento conceitual e alto acoplamento técnico. Você descreve tabelas, cria endpoints, faz o básico para o sistema existir. Ele resolve o problema imediato, mas não escala bem quando as regras começam a se multiplicar, quando várias áreas de negócio influenciam o mesmo fluxo ou quando múltiplos times precisam trabalhar em partes diferentes da solução sem se bloquear. Então, depende da complexidade do projeto e das regras de negócio.
+
+> [!Caution]
+> Uma das maiores "dores" de quem tenta aplicar Domain-Driven Design (DDD): a carga inicial de modelagem e abstração. Em ciclos rápidos como RAD (Rapid Application Development) ou Sprints ágeis de pouca duração, parar para mapear Bounded Contexts, construir a Linguagem Ubíqua e programar Aggregates, Entities e Value Objects com isolamento total de infraestrutura pode dar a sensação de que o time "não está entregando software funcional". A boa notícia é que sim, existem abordagens, metodologias ágeis de discovery e ferramentas de automação/geração de código para acelerar drasticamente a adoção de DDD.
 
 > [!Tip]
 > Já o DDD é “nível engenharia” (entrega de um produto sustentável, capaz de sobreviver à complexidade, a mudanças constantes, a regras de negócio extensivas e a um ciclo de vida longo), porque exige que o desenvolvedor deixe de pensar apenas como codificador e passe a operar como analista de domínio, arquiteto e estrategista ao mesmo tempo. É necessário entender profundamente o negócio, descobrir limites contextuais, refinar invariantes, identificar agregados, modelar comportamentos, conversar com especialistas e traduzir tudo isso para uma arquitetura mais sólida, isolada e resiliente, geralmente integrada com abordagens como Clean Architecture, Hexagonal, Onion, EDA, CQRS, Event Sourcing e microsserviços.
