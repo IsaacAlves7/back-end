@@ -55,6 +55,7 @@ Em termos de níveis de abstração:
 | Programação       | OOP, Funcional, Procedural, Reativo, Concorrência, Paralelismo                                |
 | Implementação     | Estruturas de Dados, Algoritmos, Frameworks                                                   |
 | Testes            | Abordagens TDD/BDD, Testes de Unidade, Integração, End-to-End (E2E), Test doubles: Mocks/Stubs|
+| Observabilidade   | Três Pilares (Logs, Métricas, Traces), OpenTelemetry, APM, Profiling, Dashboards, Alertas     |
 
 > [!Note]
 > **Nota**: É muito comum ver pessoas confundindo LIQUID com alguma variante de SOLID por conta do nome fluído, mas em design de software tático os padrões de referência continuam sendo SOLID, GoF, GRASP, KISS, DRY e YAGNI! Ele se refere ao Template Engine (Shopify) ou Filosofia de Deploy Contínuo (JFrog).
