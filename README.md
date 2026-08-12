@@ -74,6 +74,22 @@ Eric Evans cunhou o termo Domain-Driven Design (DDD) como parte do título de se
 > [!Important]
 > Foi popularizado por Eric Evans em seu livro **Domain-Driven Design: Tackling Complexity in the Heart of Software**, publicado em 2003. Esse livro não é leve, especialmente se você ainda está no início da jornada. Ele exige uma certa base em desenvolvimento orientado a objetos (OOP), arquitetura de software e experiência prática com projetos reais. Geralmente, ele é mais proveitoso depois que você já trabalhou em sistemas mais complexos ou com arquitetura em camadas. O Design Orientado por Domínio (DDD) ganhou atenção significativa no desenvolvimento de software por seu potencial de enfrentar desafios complexos de software, especialmente nas áreas de refatoração de sistemas, reimplementação e adoção. Utilizando o conhecimento do domínio, o DDD visa resolver problemas de negócios complexos de forma eficaz.
 
+Some Recommended Books on DDD:
+
+* **Domain-Driven Design, Tackling Complexity in the Heart of Software** — Eric Evans
+
+* **Applying Domain-Driven Design and Patterns** — Jimmy Nilsson
+
+* **Implementing Domain-Driven Design** — Vaughn Vernon
+
+* **Professional Domain-Driven Design Patterns** — Scott Millett, Nick Tune
+
+* **Domain-Driven Design Distilled** — Vaughn Vernon
+
+* **Domain Modeling Made Functional** — Scott Wlaschin
+
+* **Hands-on Domain-Driven Design with .NET Core** — Alexey Zimarev
+
 Embora o design orientado a domínio (DDD) exista desde 2004, o conceito não foi capaz de se espalhar excessivamente em todo esse tempo. Nos últimos anos, no entanto, o termo experimentou uma segunda primavera. Onde o desenvolvimento de software não é um fim em si mesmo. Em vez disso, o software é desenvolvido para resolver problemas técnicos do mundo real. Isso requer tecnologia, mas esse não é o foco, é apenas um meio para um fim. O foco real está no assunto, o **domínio** (domain)! Portanto, uma boa compreensão disso é essencial para um desenvolvimento bem-sucedido e direcionado.
 
 Sob design orientado por domínio, a estrutura e a linguagem do código de software (nomes de classes, métodos de classe, variáveis de classe) devem corresponder ao domínio de negócio. Por exemplo: se o software processa solicitações de empréstimo, pode ter classes como "`solicitação de empréstimo`", "`clientes`" e métodos como "`aceitar oferta`" e "`retirar`".
