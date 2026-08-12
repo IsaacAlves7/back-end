@@ -51,10 +51,13 @@ Em termos de níveis de abstração:
 | Negócio           | Regras de negócio, processos, especialistas do domínio                                        |
 | Design de Domínio | DDD, Bounded Context, Ubiquitous Language, Agregados                                          |
 | Arquitetura       | Clean Architecture, Hexagonal, Onion, Microsserviços                                          |
-| Software principles/Design de Código  | SOLID, GoF, GRASP, KISS, DRY, YAGNI, LIQUID |
+| Software principles/Design de Código  | SOLID, GoF, GRASP, KISS, DRY, YAGNI                                       |
 | Programação       | OOP, Funcional, Procedural, Concorrência                                                      |
 | Implementação     | Estruturas de Dados, Algoritmos, Frameworks                                                   |
 | Testes            | Abordagens TDD/BDD, Testes de Unidade, Integração, End-to-End (E2E), Test doubles: Mocks/Stubs|
+
+> [!Note]
+> **Nota**: É muito comum ver pessoas confundindo LIQUID com alguma variante de SOLID por conta do nome fluído, mas em design de software tático os padrões de referência continuam sendo SOLID, GoF, GRASP, KISS, DRY e YAGNI! Ele se refere ao Template Engine (Shopify) ou Filosofia de Deploy Contínuo (JFrog).
 
 Então eu diria que o DDD atua principalmente no **design do software**, servindo como uma ponte entre o entendimento do negócio e a arquitetura. Ele influencia a arquitetura, mas não a substitui; influencia o código, mas não determina se você usará orientação a objetos, programação funcional ou outro paradigma.
 
