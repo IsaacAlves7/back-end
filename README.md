@@ -7,7 +7,7 @@ O **DDD - Domain-Driven Design** (Projeto Orientado a Domínio) é uma abordagem
 
 Isso vem em contrapartida com o uso comum do <a href="">Data-Driven Design</a> (Projeto Orientado a Dados), que a maioria dos desenvolvedores usa sem mesmo ter consciência disso. O design orientado por domínio (DDD) é uma abordagem importante de design de software, focada em modelar software para corresponder a um domínio de acordo com a contribuição dos especialistas desse domínio. A DDD é contra a ideia de ter um modelo unificado único; em vez disso, divide um grande sistema em contextos limitados, cada um com seu próprio modelo. 
 
-Sem levar em conta o DDD, as **técnicas de modelagem de domínio** são métodos utilizados na engenharia de software para compreender e representar o domínio de um problema específico. 
+Sem levar em conta o DDD, as *técnicas de modelagem de domínio* são métodos utilizados na engenharia de software para compreender e representar o domínio de um problema específico. 
 
 O **domínio** (domain) refere-se à área de conhecimento, contexto ou setor de negócios em que o software está sendo desenvolvido. A modelagem de domínio tem como objetivo capturar os conceitos, regras e relacionamentos do domínio em um formato compreensível e utilizável pelos desenvolvedores. Então, o DDD (Domain-Driven Design) é uma abordagem para o desenvolvimento de software que combina conceitos de design de software e técnicas de modelagem de domínio. 
 
@@ -16,6 +16,56 @@ Não é considerado um design pattern específico, mas sim uma abordagem geral p
 O termo foi cunhado por Eric Evans em seu livro de mesmo nome, publicado em 2003. No entanto, a definição mais simples que encontrei foi ao ler o livro Fundamentals of Software Architecture de Neal Ford e Mark Richards:
 
 > O design orientado a domínio (DDD) é uma técnica de modelagem que permite a decomposição organizada de domínios de problemas complexos. - Neal Ford e Mark Richards. Fundamentos da Arquitetura de Software. 2020.
+
+O **DDD (Domain-Driven Design)** fica em uma camada intermediária entre a arquitetura de software e a implementação do código.
+
+Ele não é exatamente uma arquitetura como Clean Architecture, Hexagonal Architecture ou Microsserviços. Também não é uma técnica de programação como OOP, programação funcional, estruturas de dados (DSA) ou design patterns.
+
+O principal foco do DDD é *modelar o domínio do negócio*. Uma forma simples de visualizar:
+
+```
+Negócio
+↓
+DDD (modelo do domínio)
+↓
+Arquitetura
+↓
+Código (OOP, Funcional, Design Patterns, DSA)
+↓
+Infraestrutura
+```
+
+Por exemplo, em um sistema bancário:
+
+* O negócio define conceitos como Conta, Cliente, Transferência e Saldo.
+* O DDD transforma esses conceitos em Entidades, Value Objects, Agregados, Domínios e Regras de Negócio.
+* A arquitetura define como esses componentes se organizam (camadas, módulos, microsserviços etc.).
+* O código implementa isso usando classes, interfaces, funções, coleções, algoritmos e padrões de projeto.
+
+Por isso costuma-se dizer que o DDD é uma **abordagem de modelagem e design estratégico/tático do domínio**, e não uma arquitetura nem uma linguagem de programação.
+
+Em termos de níveis de abstração:
+
+| Nível             | Exemplos                                               |
+| ----------------- | ------------------------------------------------------ |
+| Negócio           | Regras de negócio, processos, especialistas do domínio |
+| Design de Domínio | DDD, Bounded Context, Ubiquitous Language, Agregados   |
+| Arquitetura       | Clean Architecture, Hexagonal, Onion, Microsserviços   |
+| Design de Código  | SOLID, GoF, GRASP                                      |
+| Programação       | OOP, Funcional, Procedural                             |
+| Implementação     | Estruturas de Dados, Algoritmos, Frameworks            |
+
+Então eu diria que o DDD atua principalmente no **design do software**, servindo como uma ponte entre o entendimento do negócio e a arquitetura. Ele influencia a arquitetura, mas não a substitui; influencia o código, mas não determina se você usará orientação a objetos, programação funcional ou outro paradigma.
+
+De forma lúdica, se o software fosse uma cidade:
+
+* O negócio decide quais bairros precisam existir.
+* O DDD desenha o mapa da cidade e define o propósito de cada bairro.
+* A arquitetura define as avenidas, pontes e regras de circulação.
+* O OOP, programação funcional e design patterns são as técnicas de construção dos prédios.
+* Estruturas de dados e algoritmos são os materiais e mecanismos usados dentro desses prédios.
+
+Por isso é comum ouvir que DDD está mais próximo da modelagem do negócio do que da tecnologia. É uma disciplina de design que conversa com arquitetos, desenvolvedores e especialistas do domínio ao mesmo tempo.
 
 Eric Evans cunhou o termo Domain-Driven Design (DDD) como parte do título de seu livro de 2004, Domain-Driven Design: Tackling Complexity in the Heart of Software.
 
