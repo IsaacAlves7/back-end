@@ -52,7 +52,7 @@ Em termos de níveis de abstração:
 | Design de Domínio | DDD, Bounded Context, Ubiquitous Language, Agregados                                          |
 | Arquitetura       | Clean Architecture, Hexagonal, Onion, Microsserviços                                          |
 | Software principles/Design de Código  | SOLID, GoF, GRASP, KISS, DRY, YAGNI                                       |
-| Programação       | OOP, Funcional, Procedural, Concorrência                                                      |
+| Programação       | OOP, Funcional, Procedural, Reativo, Concorrência, Paralelismo                                |
 | Implementação     | Estruturas de Dados, Algoritmos, Frameworks                                                   |
 | Testes            | Abordagens TDD/BDD, Testes de Unidade, Integração, End-to-End (E2E), Test doubles: Mocks/Stubs|
 
