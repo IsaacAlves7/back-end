@@ -51,8 +51,8 @@ Em termos de níveis de abstração:
 | Negócio           | Regras de negócio, processos, especialistas do domínio                                        |
 | Design de Domínio | DDD, Bounded Context, Ubiquitous Language, Agregados                                          |
 | Arquitetura       | Clean Architecture, Hexagonal, Onion, Microsserviços                                          |
-| Design de Código  | SOLID, GoF, GRASP                                                                             |
-| Programação       | OOP, Funcional, Procedural                                                                    |
+| Software principles/Design de Código  | SOLID, GoF, GRASP, KISS, DRY, YAGNI, LIQUID |
+| Programação       | OOP, Funcional, Procedural, Concorrência                                                      |
 | Implementação     | Estruturas de Dados, Algoritmos, Frameworks                                                   |
 | Testes            | Abordagens TDD/BDD, Testes de Unidade, Integração, End-to-End (E2E), Test doubles: Mocks/Stubs|
 
