@@ -1,16 +1,15 @@
 > Versículo chave: "Consagre ao Senhor tudo o que você faz, e os seus planos serão bem-sucedidos." - Provérbios 16:3
 
-<img width="720" height="949" alt="Screenshot_20240626-133353_Instagram" src="https://github.com/user-attachments/assets/c5f2916e-c4f7-46f5-860d-1cdd5da0d51a" />
-
-<img width="720" height="906" alt="Screenshot_20241114-063818_Instagram" src="https://github.com/user-attachments/assets/2ce85867-496e-44ec-ba23-b49ca49f6d6c" />
-
-<img width="720" height="918" alt="Screenshot_20250102-225833_Instagram" src="https://github.com/user-attachments/assets/0f443edb-beed-48d1-ba47-6a6de0eccd5c" />
-
-<img width="720" height="825" alt="Screenshot_20240820-145337_Instagram" src="https://github.com/user-attachments/assets/2efb31d7-c51e-4c63-9c5b-f49e259ddaca" />
-
-<img width="720" height="936" alt="FB_IMG_1728079729825" src="https://github.com/user-attachments/assets/fc9fb0b7-c1c5-4fc9-82a0-88a251bf48fc" />
-
-<img width="720" height="904" alt="Screenshot_20240618-224002_Instagram" src="https://github.com/user-attachments/assets/d2955e62-42cc-43d8-bc3e-986919988bf8" />
+<table>
+  <tr>
+    <td><img width="720" height="949" alt="Screenshot_20240626-133353_Instagram" src="https://github.com/user-attachments/assets/c5f2916e-c4f7-46f5-860d-1cdd5da0d51a" /></td>
+    <td><img width="720" height="906" alt="Screenshot_20241114-063818_Instagram" src="https://github.com/user-attachments/assets/2ce85867-496e-44ec-ba23-b49ca49f6d6c" /></td>
+    <td><img width="720" height="918" alt="Screenshot_20250102-225833_Instagram" src="https://github.com/user-attachments/assets/0f443edb-beed-48d1-ba47-6a6de0eccd5c" /></td>
+    <td><img width="720" height="825" alt="Screenshot_20240820-145337_Instagram" src="https://github.com/user-attachments/assets/2efb31d7-c51e-4c63-9c5b-f49e259ddaca" /></td>
+    <td><img width="720" height="936" alt="FB_IMG_1728079729825" src="https://github.com/user-attachments/assets/fc9fb0b7-c1c5-4fc9-82a0-88a251bf48fc" /></td>
+    <td><img width="720" height="904" alt="Screenshot_20240618-224002_Instagram" src="https://github.com/user-attachments/assets/d2955e62-42cc-43d8-bc3e-986919988bf8" /></td>
+  </tr>
+</table>
 
 Código de status HTTP que você deveria conhecer
 
