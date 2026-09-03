@@ -1017,8 +1017,6 @@ Deixa a palavra para você: o código de status HTTP 401 é para Não Autorizado
 
 <img width="1559" height="1536" alt="unnamed" src="https://github.com/user-attachments/assets/5877579c-b198-4c42-902e-6deed5c61635" />
 
-> Versículo chave: "Consagre ao Senhor tudo o que você faz, e os seus planos serão bem-sucedidos." - Provérbios 16:3
-
 APIs são a espinha dorsal das aplicações modernas. Elas expõem uma área de superfície muito grande para ataques, aumentando o risco de vulnerabilidades de segurança. Ameaças comuns incluem injeção SQL, scripts cross-site e ataques de negação de serviço distribuída (DDoS).
 
 Por isso, é crucial implementar medidas de segurança robustas para proteger as APIs e os dados sensíveis que elas lidam. No entanto, muitas empresas têm dificuldades para alcançar uma cobertura abrangente de segurança da API. Elas frequentemente dependem exclusivamente da varredura dinâmica de segurança de aplicações ou do pen testing externo. Embora esses métodos sejam valiosos, eles podem não cobrir totalmente a camada da API e sua crescente superfície de ataque.
