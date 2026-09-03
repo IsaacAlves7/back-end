@@ -1006,10 +1006,10 @@ Esses códigos são definidos no RFC 9110. Para evitar que você lea o documento
 Deixa a palavra para você: o código de status HTTP 401 é para Não Autorizado. Você pode explicar a diferença entre autenticação e autorização, e qual deles o código 401 verifica?
 
 <img width="1272" height="1036" alt="unnamed" src="https://github.com/user-attachments/assets/c5ec0ec2-39cb-44fc-944d-c965caef7aeb" />
-<img width="550" height="684" alt="unnamed" src="https://github.com/user-attachments/assets/816e8ba9-b462-4103-b9b3-120df5b9e502" />
 
 <table>
   <tr>
+	<td><img width="550" height="684" alt="unnamed" src="https://github.com/user-attachments/assets/816e8ba9-b462-4103-b9b3-120df5b9e502" /></td>
     <td><img width="1100" height="1283" alt="unnamed" src="https://github.com/user-attachments/assets/637b9747-af12-4d1f-9e0b-7376024ad5f7" /></td>
     <td><img width="550" height="645" alt="unnamed" src="https://github.com/user-attachments/assets/80d01068-a14b-4546-96d7-7cd82e832763" /></td>
   </tr>
