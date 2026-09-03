@@ -1403,7 +1403,7 @@ Por exemplo, vamos supor que o serviço de usuário use códigos de mensagem na 
 
 Uma regra de ouro que devemos sempre seguir é devolver um código para cada resposta, mesmo que seja um timeout. Seguir essa regra garante um comportamento previsível e consistente. É crucial para manter um serviço de alta qualidade.
 
-# Back-end
+## [REST] Back-end
 Contracts:
 
 [![docker-compose.yaml](https://img.shields.io/badge/-docker--compose.yaml-pink?style=social&logo=docker&logoColor=magenta)](#)
