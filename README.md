@@ -995,11 +995,11 @@ Código de status HTTP que você deveria conhecer
 
 Os códigos de resposta para HTTP são divididos em cinco categorias:
 
-Informacional (100-199)
-Sucesso (200-299)
-Redirecionamento (300-399)
-Erro do Cliente (400-499)
-Erro do Servidor (500-599)
+- Informacional (100-199) = Informações
+- Sucesso (200-299) = Obtido ou Criado
+- Redirecionamento (300-399) = Encaminhado
+- Erro do Cliente (400-499) = Não encontrado pelo cliente
+- Erro do Servidor (500-599) = Não existe pro lado do servidor
 
 Esses códigos são definidos no RFC 9110. Para evitar que você lea o documento inteiro (que tem cerca de 200 páginas), aqui está um resumo dos mais comuns:
 
