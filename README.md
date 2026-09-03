@@ -1001,6 +1001,9 @@ Os códigos de resposta para HTTP são divididos em cinco categorias:
 - Erro do Cliente (400-499) = Não encontrado pelo cliente
 - Erro do Servidor (500-599) = Não existe pro lado do servidor
 
+> [!Note]
+> Mesmo que uma resposta HTTP retorne Sucesso após a requisição, é necessário averiguar o corpo da resposta ou o preview, pois erros podem acontecer mesmo com o status certo.
+
 Esses códigos são definidos no RFC 9110. Para evitar que você lea o documento inteiro (que tem cerca de 200 páginas), aqui está um resumo dos mais comuns:
 
 Deixa a palavra para você: o código de status HTTP 401 é para Não Autorizado. Você pode explicar a diferença entre autenticação e autorização, e qual deles o código 401 verifica?
