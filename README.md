@@ -13,6 +13,12 @@ Com o decorrer dos anos de uso do SOAP, surgiu o REST em 2000, onde são abordag
 
 Por outro lado, REST é um padrão arquitetural basicamente leve por natureza. Então, quando você tiver limitações de banda prefira web services REST, sendo uma arquitetura que se baseia nos princípios da web e utiliza os métodos HTTP (verbos), como `GET`, `POST`, `PUT` e `DELETE`, para a manipulação de recursos. Uma das grandes vantagens do REST é a flexibilidade, pois permite a utilização de diferentes formatos de dados, como JSON, XML e até texto simples, tornando-o mais leve e fácil de trabalhar. 
 
+<details><summary><b title="(click to open)">RPC vs RESTful:</b></summary><br />
+
+![unnamed](https://github.com/user-attachments/assets/d74fb525-ad26-4497-870b-6827d0f16e24)
+
+</details>
+
 Além disso, enquanto SOAP pode ser usado em serviços com estado, REST é fundamentalmente stateless, significando que cada requisição é independente e não mantém informações entre as chamadas. Isso simplifica a escalabilidade e o desempenho das aplicações. Em termos de uso, SOAP é mais comum em ambientes corporativos que exigem segurança rigorosa e operações complexas, enquanto REST é amplamente adotado em aplicações web e móveis devido à sua simplicidade e eficiência. 
 
 Essas diferenças fundamentais tornam cada abordagem mais adequada a contextos distintos, dependendo das necessidades do projeto. O REST chama simplesmente **serviços** via URL PATH ou endpoint (caminho ou rota da aplicação "`/`"). A arquitetura REST é simples e fornece acesso aos recursos para que o cliente REST acesse e renderize os recursos no lado do cliente. No estilo REST, URI ou IDs globais ajudam a identificar cada recurso.
@@ -904,8 +910,6 @@ Segundo Passo: Adicionar a referencia do arquivo XML gerado na configuração do
 ![image](https://github.com/user-attachments/assets/3f418d10-ba32-40a1-af83-07130018a02c)
 
 Além da glória do rest, vamos dizer que você queira monetizar o sistema de uma API, imagine que você desenvolveu uma API para converter PDFs, PNGs, JPEGs, SVGs. Daí, você expõe ela de forma amigável, dentro de um site, e você não quer expor ela para que alguém derrube. Se reparar no ChatGPT, eles limitam o número de requisições na aplicação a partir do plano free, mais do que isso é pago, sem isso você não obterá resposta.
-
-![unnamed](https://github.com/user-attachments/assets/d74fb525-ad26-4497-870b-6827d0f16e24)
 
 <img width="540" height="381" alt="Captura de tela 2025-12-22 133017" src="https://github.com/user-attachments/assets/b556b9a2-0db2-4a8c-9fe9-0b32847af058" />
 
