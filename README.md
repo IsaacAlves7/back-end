@@ -1494,20 +1494,22 @@ EXPOSE 3000
 CMD [ "node", "server/server.js" ]
 ```
 
-# 🚀 Deploy in AWS - Amazon Web Services
+## [REST] Deploy in AWS - Amazon Web Services
 
-### Inside Amazon EC2 instance (public instance)
+Inside Amazon EC2 instance (public instance):
+
 ```sh
 psql -h [endpoint rds] -u [usuário] -w postgres
 ```
 
-### Inside Database
+Inside Database:
+
 ```sql
 INSERT TO blog.post VALUES(7,'Isaac','DevOps Engineer', '2021-11-01 23:54:02');
 SELECT * FROM blog.post;
 ```
 
-### Configurando o banco de dados com psql
+Configurando o banco de dados com psql:
 
 ```sh
 create database IsaacAlves7; # Comando para criar o banco de dados chamado IsaacAlves7
@@ -1515,7 +1517,8 @@ alter user postgres with encrypted password 'senha'; # Comando para alterar a se
 \q # saindo do psql
 ```
 
-### SSM
+SSM parameter store:
+
 ```
 !Sub '{{resolve:ssm-secure:/ECSCluster/${ClusterName}/RDS_ROOT_PASSWORD:1}}'
 ```
