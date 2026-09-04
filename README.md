@@ -59,7 +59,7 @@ Para falar de **endpoints** (substantivos) devemos falar um pouco de gramática.
 
 Além disso, o REST é baseado em um conjunto de constraints, em sua tese, Roy Fielding definiu seis restrições (principles) para o REST:
 
-<img src="https://github.com/IsaacAlves7/DevSecOps/assets/61624336/44b1b5c9-d5cc-4c5e-a351-4647ad8c93e7">
+<img width="1200" height="960" alt="image" src="https://github.com/user-attachments/assets/d594e24d-3775-40e7-ba0b-dcacd8ed8399" />
 
 <br>
 
