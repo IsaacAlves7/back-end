@@ -744,6 +744,9 @@ Exemplo: Solicitando os dados a partir da `placa` e `tipo` do veículo para a AP
 }
 ```
 
+> [!Tip]
+> Caso esteja usando a APIBrasil para testes e não quiser arcar com custos iniciais, pode usar um modelo gratuito que funciona como réplica dessa API, chamada <a href="">BrasilAPI</a>, cujas funcionalidades são parecidas para usos específicos
+
 <a href=""><img src="https://cdn.worldvectorlogo.com/logos/openapi-1.svg" align="right" height="77"></a>
 
 Além disso, o **contrato de uma API** é o acordo formal e explícito que define como a comunicação entre um cliente e um serviço deve acontecer. Esse contrato especifica os detalhes sobre quais endpoints estão disponíveis, quais métodos HTTP devem ser usados (`GET`, `POST`, `PUT`, `DELETE` etc.), quais parâmetros são esperados na requisição, quais tipos de dados devem ser enviados ou recebidos (geralmente em JSON ou XML), quais respostas são possíveis (status codes e estrutura dos dados de retorno) e quais erros podem ocorrer e como tratá-los. Em outras palavras, é como se fosse um “manual” que descreve exatamente como conversar com a API, o que ela espera e o que ela promete entregar em troca.
